@@ -1,0 +1,239 @@
+html{
+	margin:0;
+	padding:0;
+	scroll-behavior:smooth
+}
+body{
+	margin:0;
+	padding:0;
+	background-color: #ffffff;
+}
+ul,ol{
+	list-style:none;
+}
+hr{
+	width:70px;
+	border:2px solid #D67100;
+}
+/*___ HEADER ___*/
+header {
+	width:100%;
+	height:100vh;
+	background-image: url(images/Plovdiv_5300x2526.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	border-top:1px solid black;
+	z-index: -1;
+}
+.wrapper{
+	width:100%;
+	height:97px;
+    position:fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.7;
+    background: #000;
+    z-index: 1;
+}
+.welcome{
+	width:45%;
+	height:300px;
+	margin:15% auto;
+	text-align:center;
+}
+	.welcome h1{
+		color:#fff;
+		font-size:60px;
+		text-shadow: 0px 4px 2px black;
+	}
+	.welcome i{
+		color:#fff;
+		font-size:60px;
+		text-shadow: 0px 4px 2px black;
+	}
+		.welcome i:hover{
+			color:#D67100;
+			transition: 0.5s;
+			transform: scale(1.15);
+		}
+/*____ MENU ____*/
+nav {
+	position: fixed;
+	width:100%;
+	height:95px;
+	border-bottom:2px solid #D67100;
+	box-shadow: 0px 1px 10px black;
+	 z-index: 2;
+}
+	nav > ul{
+		text-align: center;	
+	}
+		nav ul > li{
+			display: inline-block;
+			margin:20px;
+		}
+			nav ul li > a{
+				font-size:20px;
+				color:#FFF;
+				font-weight: bold;
+				text-transform: uppercase;
+				font-family: Tahoma;
+				text-decoration: none;
+				text-shadow: 0px 2px 3px black;
+			}
+			nav ul li > a:hover{
+				color:#D67100;
+				text-decoration: underline;
+			}
+
+
+/*___ SECTION interesting ___*/
+#info{
+	width:100%;
+	height:100%;
+	margin:20px 0 20px 0;
+	padding:50px 0;
+}
+  #info img{
+  	width:30%;
+  	height:15%;
+  	margin:10px 20px;
+  }
+	#info h2{
+		margin:50px ;
+		font-size:40px;
+		text-align:center;
+		font-weight: bold;
+		text-transform: uppercase;
+		font-family: Tahoma;
+	}
+		#info p{
+			margin:50px 20px 50px 20px ;
+			text-align:justify;
+			font-family: Arial;
+			font-size:20px;
+		}
+
+/*___ SECRION content ___*/
+.contents{
+	width:100%;
+	height:100%;	
+	padding:100px 0 100px 0 ;
+	background-color: #E1E1E1;
+}
+.contents h2{
+		color:#000000;
+		font-size:45px ;
+		text-align:center;
+		font-weight: bold;
+		text-transform: uppercase;
+		font-family: Tahoma;
+	}
+.boxLeft{
+	margin:50px 0;
+	display: inline-grid;
+  	grid-template-columns: auto auto auto;
+	width:80%;
+	height:100%;
+}
+.boxRight{
+	margin:50px 3px 0 0;
+	width:19%;
+	height:100%;
+	float:right;
+}
+
+/* ___ ARTICLE left ___*/
+article{
+	margin:10px;
+	width:95%;
+	height:95%;
+	text-align:center;
+	background-color: #fff;
+	box-shadow:0px 2px 4px darkgrey;
+	border:1px solid #7F7F7F;
+}
+	article img{
+		width:90%;
+		height:370px;
+	}
+	article p{
+		font-style:italic;
+		font-size:18px;
+	}
+
+/* ___ ASIDE right ___*/
+aside h3{
+	text-decoration: underline;
+}
+	aside div{
+		width:90%;
+		height:100%;
+		margin:20px 0;
+		padding:10px;
+		border:1px dashed #7F7F7F;
+		box-shadow:0px 2px 4px darkgrey;
+	}
+	aside p {
+		font-weight: bold;
+		font-size:18px;
+	}
+
+/* ___ SECTION contact ___*/
+#contact {
+	width:100%;
+	height:100%;
+	padding:50px 0;
+	text-align:center;
+	background-color: #616161;
+}
+	#contact h2{
+		color:#FFFFFF;
+		font-size:45px ;
+		margin:50px ;
+		text-align:center;
+		font-weight: bold;
+		text-transform: uppercase;
+		font-family: Tahoma;
+		text-shadow: 0px 2px 3px black;
+	}
+		#contact label{
+			margin:5px 0;
+			font-size:20px;
+			color:#fff;
+			display: block;
+		}
+			#contact input{
+				font-size:16px;
+				width:30%;
+				height:30px;
+			}
+			#contact textarea{
+				font-size:16px;
+				width:30%;
+				height:100px;
+			}
+			 .btn{
+			 	margin:30px;
+				width:80px !important;
+				background-color: #fff;
+				font-weight:bold;
+				color:#208500;
+			}
+
+/*___ FOOTER ___*/
+footer{
+	width:100%;
+	background-color:#3D3D3D;
+	padding:30px 0;
+}
+	footer p{
+		color:#FFFFFF;
+		font-size:20px;
+		text-align: center;
+	}
+
+
+

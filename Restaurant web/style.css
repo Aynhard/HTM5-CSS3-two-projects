@@ -1,0 +1,280 @@
+html{
+	margin:0;
+	padding:0;
+	scroll-behavior:smooth
+}
+body{
+	margin:0;
+	padding:0;
+	background-color: #ffffff;
+}
+ul,ol{
+	list-style:none;
+}
+hr{
+	width:16px;
+	height:16px;
+	margin:auto;
+	border-radius: 50%;
+	border:3px solid #0C8200;
+}
+/*___ HEADER ___*/
+header {
+	width:100%;
+	height:100vh;
+	background-image: url(images/background.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	border-top:1px solid black;
+	z-index: -1;
+}
+.callNow{
+	position: fixed;
+	width:100%;
+	height:25px;
+	top:0;
+	left:0;
+	background-color:#F4FFF3;
+	text-align:center;
+	z-index: 2;
+}
+	.callNow span{
+		margin:0 50px;
+		font-size:18px;
+		font-style:italic;
+	}
+.wrapper{
+	position:fixed;
+	width:100%;
+	height:72px;
+    top: 25px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.7;
+    background: #000;
+    z-index: 1;
+}
+.welcome{
+	width:45%;
+	height:300px;
+	margin:15% auto;
+	text-align:center;
+}
+	.welcome h1{
+		color:#fff;
+		font-size:60px;
+		text-shadow: 0px 4px 2px black;
+	}
+		.welcome h1 span{
+			color:#E6FFE3;
+			text-decoration: underline;
+			font-size:35px;
+			font-style:italic;
+		}
+	.welcome i{
+		color:#fff;
+		font-size:60px;
+		text-shadow: 0px 4px 2px black;
+	}
+		.welcome i:hover{
+			color:#0C8200;
+			transition: 0.5s;
+			transform: scale(1.15);
+		}
+/*____ MENU ____*/
+nav {
+	position: fixed;
+	top:25px;
+	width:100%;
+	height:70px;
+	border-bottom:2px solid #0C8200;
+	border-top:2px solid #0C8200;
+	z-index: 2;
+}
+	nav > ul{
+		text-align: center;	
+	}
+		nav ul > li{
+			display: inline-block;
+			margin:8px 20px 0 20px;
+		}
+			nav ul li > a{
+				font-size:18px;
+				color:#FFF;
+				font-weight: bold;
+				text-transform: uppercase;
+				font-family: Tahoma;
+				text-decoration: none;
+				text-shadow: 0px 2px 3px black;
+			}
+			nav ul li > a:hover{
+				color:#0C8200;
+				font-style: italic;
+			}
+
+
+/*___ SECTION interesting ___*/
+#info{
+	width:80%;
+	height:100%;
+	margin:auto;
+	padding:50px 0;
+}
+	#info div{
+		width:24%;
+		height:100%;
+		margin:50px 0 50px 0;
+		text-align:center;
+		display:inline-block;
+	}
+	#info img{
+		margin:20px;
+	}
+	  #info img:hover{
+	  	  box-shadow:;
+		  transition: 0.2s;
+		  transform: scale(1.05);
+	  }
+ 		#info div img{
+  			width:60px;
+  			height:60px;
+  			margin:10px 20px;
+  		}
+		#info h2{
+			margin:50px ;
+			font-size:40px;
+			text-align:center;
+			font-weight: bold;
+			text-transform: uppercase;
+			font-family: Tahoma;
+		}
+
+/*___ SECRION content ___*/
+.contents{
+	width:100%;
+	height:100%;	
+	padding:100px 0 100px 0 ;
+	background-color: #E1E1E1;
+}
+.contents h2{
+		color:#000000;
+		font-size:45px ;
+		text-align:center;
+		font-weight: bold;
+		text-transform: uppercase;
+		font-family: Tahoma;
+	}
+.boxMenu{
+	margin:50px 0;
+	display: inline-grid;
+  	grid-template-columns: auto auto;
+	width:100%;
+	height:100%;
+}
+
+
+/* ___ ARTICLES ___*/
+article{
+	width:90%;
+	height:100%;
+	margin:35px;
+	text-align:center;
+	background-color: #fff;
+	box-shadow:0px 2px 4px darkgrey;
+	border:1px solid #7F7F7F;
+	border-radius: 20px;
+}
+article .price{
+	position:relative;
+	bottom:0;
+	left:-25px;
+	width:80px;
+	height:80px;
+	border-radius: 50%;
+	border:1px solid #3E0000;
+	background-color: #FFFFFF;
+	text-align:center;
+	box-shadow:8px 8px 0px darkgrey;
+	}
+  article .price h4{
+  	color: black;
+  	font-size:22px;
+  }
+  article:hover > .price{
+  	transition: 0.4s;
+  	background-color: #CA3737;
+  }
+  article:hover > .price h4{
+    transition: 0.4s;
+    color: white;
+  }
+	article img{
+		width:40%;
+		height:50%;
+	}
+	article p{
+		margin:10px;
+		font-style:italic;
+		font-size:18px;
+	}
+
+/* ___ SECTION contact ___*/
+#contact {
+	width:100%;
+	height:100%;
+	padding:50px 0;
+	text-align:center;
+	background-color: #3A4239;
+}
+	#contact h2{
+		color:#FFFFFF;
+		font-size:45px ;
+		margin:50px ;
+		text-align:center;
+		font-weight: bold;
+		text-transform: uppercase;
+		font-family: Tahoma;
+		text-shadow: 0px 2px 3px black;
+	}
+		#contact label{
+			margin:5px 0;
+			font-size:20px;
+			color:#fff;
+			display: block;
+		}
+			#contact input{
+				font-size:16px;
+				width:30%;
+				height:30px;
+				border-radius: 20px;
+			}
+			#contact textarea{
+				font-size:16px;
+				width:30%;
+				height:100px;
+				border-radius: 20px;
+			}
+			 .btn{
+			 	margin:30px;
+				width:80px !important;
+				background-color: #fff;
+				font-weight:bold;
+				color:#208500;
+				border-radius: 10px !important;
+			}
+
+/*___ FOOTER ___*/
+footer{
+	width:100%;
+	background-color:#1F251E;
+	padding:30px 0;
+}
+	footer p{
+		color:#FFFFFF;
+		font-size:20px;
+		text-align: center;
+	}
+
+
+
